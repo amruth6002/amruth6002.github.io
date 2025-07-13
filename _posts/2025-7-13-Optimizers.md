@@ -52,5 +52,24 @@ we can see vizualization of data below:
 
 ![](/images/vanilla_gd_input.png)
 
+lets perform 100 iteration and see values of loss function and parameters :
+
+Iteration 0:  Loss=158.2773,m=1.4396, c=0.2184
+Iteration 10: Loss=4.2799,  m=2.0871, c=0.3446
+Iteration 20: Loss=4.2722,  m=2.0830, c=0.3719
+Iteration 30: Loss=4.2653,  m=2.0791, c=0.3978
+Iteration 40: Loss=4.2590,  m=2.0754, c=0.4225
+Iteration 50: Loss=4.2533,  m=2.0719, c=0.4460
+Iteration 60: Loss=4.2482,  m=2.0686, c=0.4683
+Iteration 70: Loss=4.2436,  m=2.0654, c=0.4895
+Iteration 80: Loss=4.2394,  m=2.0624, c=0.5096
+Iteration 90: Loss=4.2356,  m=2.0595, c=0.5288
+
+we can see the final values of parameters and loss function below:
+![](/images/vanilla_gd_output.png)
+
+full python code -:
+[github](https://github.com/amruth6002/Optimizers/blob/main/vanilla.ipynb)
+
 
 
