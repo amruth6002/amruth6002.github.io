@@ -68,10 +68,10 @@ Iteration 90: Loss=4.2356,  m=2.0595, c=0.5288
 ```
 
 we can see the final values of parameters and loss function below:
-```
+
 ![](/images/vanilla_gd_output.png)
 
-```
+
 full python code -:
 [github](https://github.com/amruth6002/Optimizers/blob/main/vanilla.ipynb)
 
