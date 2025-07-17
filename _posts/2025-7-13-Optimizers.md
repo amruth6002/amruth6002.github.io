@@ -6,10 +6,14 @@ title: Optimizers in machine learning and deeplearning from scratch
 In this blog i will explain the optimizers in machine learning and deeplearning from scratch. I will explain the following optimizers:
 
 1.) [vanilla Gradient Descent](#vanilla-gradient-descent)
-2.) Stochastic Gradient Descent (SGD)
-3.) Momentum
-4.) RMSprop
-5.) Adam
+
+2.) [Stochastic Gradient Descent (SGD)](#stochastic-gradient-descent-sgd)
+
+3.) [Momentum](#momentum)
+
+4.) [RMSprop](#rmsprop)
+
+5.) [Adam](#adam)
 
 ## Vanilla Gradient Descent
 
