@@ -122,7 +122,7 @@ Where:
 - β is the decay rate (typically 0.9)
 - ∇J(θ_t) is the gradient of the cost function
 - α is the learning rate
-- ε is a small constant added for numerical stability
+- ε is a small constant added for numerical stability)(avoids deviding by zero)
 - θ_t represents the parameters at time step t
 
 
