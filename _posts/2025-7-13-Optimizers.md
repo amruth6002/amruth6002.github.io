@@ -56,7 +56,7 @@ we can see vizualization of data below:
 
 ![](/images/vanilla_gd_input.png)
 
-Let's perform 100 iterations and see values of loss function and parameters:
+Let's perform 100 iterations and see values of loss function and parameters at every 10th iteration.:
 
 ```
 Iteration 0:  Loss=158.2773, m=1.4396, c=0.2184
