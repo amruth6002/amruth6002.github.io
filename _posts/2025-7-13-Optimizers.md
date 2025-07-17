@@ -104,5 +104,25 @@ Where:
 - α is the learning rate
 - θ_t represents the parameters at time step t
 
+## RMSprop
+
+In vanilla gradient descent the learning rate is fixed, which may cause oscillation in gradient descent. RMSprop (Root Mean Square Propagation) addresses this issue by adapting the learning rate for each parameter based on the history of gradients for that parameter. 
+
+RMSprop keeps a moving average of the squared gradients for each parameter and then divides the learning rate by the square root of this average. This adaptive approach allows larger updates for infrequent parameters and smaller updates for frequent parameters, which helps in faster convergence and avoiding oscillations.
+
+The formula for RMSprop is:
+
+```
+E[g^2]_t = β * E[g^2]_{t-1} + (1 - β) * (∇J(θ_t))^2
+θ_{t+1} = θ_t - α * ∇J(θ_t) / (√E[g^2]_t + ε)
+```
+
+Where:
+- E[g^2]_t is the exponentially decaying average of squared gradients at time t
+- β is the decay rate (typically 0.9)
+- ∇J(θ_t) is the gradient of the cost function
+- α is the learning rate
+- ε is a small constant added for numerical stability
+- θ_t represents the parameters at time step t
 
 
