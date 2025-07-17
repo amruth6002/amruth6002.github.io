@@ -80,4 +80,29 @@ full python code -:
 [github](https://github.com/amruth6002/Optimizers/blob/main/vanilla.ipynb)
 
 
+## Stochastic Gradient Descent (SGD)
+
+The problem with vanilla gradient descent is it considers all data points for updating parameters in each epoch, instead of this SGD selects one random points and updates parameters for minimizing loss function. SGD is very good for large data sets for smaller data sets SGD may not be that good.
+
+code for SGD vs Vanilla gradient descent :- [github](https://github.com/amruth6002/Optimizers/blob/main/stochastic_gradient_vs_vanilla_gradient.ipynb)
+
+## Momentum
+
+This is inspired from physics where we add some percentage of velocity from previous iteration. Momentum helps the optimizer to navigate through ravines (areas where the surface curves much more steeply in one dimension than in another) more efficiently.
+
+The formula for Momentum is:
+
+```
+v_t = β * v_{t-1} + (1 - β) * ∇J(θ_t)
+θ_{t+1} = θ_t - α * v_t
+```
+
+Where:
+- v_t is the velocity vector at time step t
+- β is the momentum coefficient (typically 0.9)
+- ∇J(θ_t) is the gradient of the cost function with respect to parameters θ at time step t
+- α is the learning rate
+- θ_t represents the parameters at time step t
+
+
 
