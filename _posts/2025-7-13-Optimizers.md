@@ -125,4 +125,54 @@ Where:
 - ε is a small constant added for numerical stability)(avoids deviding by zero)
 - θ_t represents the parameters at time step t
 
+## Adam
+
+Adam (Adaptive Moment Estimation) combines the benefits of both Momentum and RMSprop by keeping track of two moving averages:
+
+1.) Mean of gradients (first moment) - similar to Momentum
+
+2.) Variance of gradients (second moment) - similar to RMSprop
+
+Adam adapts the learning rate for each parameter by leveraging both the average of gradients (direction) and the average of squared gradients (magnitude). This makes it particularly effective for problems with noisy or sparse gradients and non-stationary objectives.
+
+The algorithm also includes bias correction for the estimates of the first and second moments, which helps in the initial phase of training when the moving averages are biased towards zero.
+
+### Steps in Adam algorithm:
+
+1. **Initialize parameters**: 
+   - Initialize parameters θ
+   - Initialize first moment vector m₀ = 0
+   - Initialize second moment vector v₀ = 0
+   - Initialize timestep t = 0
+
+2. **Update parameters** (for each iteration):
+   - t = t + 1
+   - Compute gradient g_t = ∇J(θ_t)
+   - Update biased first moment estimate: m_t = β₁ * m_{t-1} + (1 - β₁) * g_t
+   - Update biased second moment estimate: v_t = β₂ * v_{t-1} + (1 - β₂) * g_t²
+   - Compute bias-corrected first moment estimate: m̂_t = m_t / (1 - β₁ᵗ)
+   - Compute bias-corrected second moment estimate: v̂_t = v_t / (1 - β₂ᵗ)
+   - Update parameters: θ_t = θ_{t-1} - α * m̂_t / (√v̂_t + ε)
+
+### The complete formula for Adam is:
+
+```
+m_t = β₁ * m_{t-1} + (1 - β₁) * g_t
+v_t = β₂ * v_{t-1} + (1 - β₂) * g_t²
+m̂_t = m_t / (1 - β₁ᵗ)
+v̂_t = v_t / (1 - β₂ᵗ)
+θ_{t+1} = θ_t - α * m̂_t / (√v̂_t + ε)
+```
+
+Where:
+- m_t is the first moment estimate (mean) at time t
+- v_t is the second moment estimate (variance) at time t
+- m̂_t and v̂_t are the bias-corrected estimates
+- β₁ and β₂ are the exponential decay rates (typically β₁ = 0.9 and β₂ = 0.999)
+- g_t is the gradient at time t
+- α is the learning rate
+- ε is a small constant for numerical stability
+- t is the timestep
+
+Adam is currently one of the most popular optimization algorithms in deep learning because it generally outperforms other adaptive optimization methods and requires little parameter tuning.
 
