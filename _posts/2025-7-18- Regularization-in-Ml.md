@@ -7,6 +7,8 @@ title: Regularization in Machine learning (Ridge and Lasso)
 
 Regularization is a crucial technique in machine learning used to prevent overfitting, which occurs when a model learns the training data too well, including its noise and outliers. An overfit model performs excellently on training data but poorly on unseen test data.
 
+![Regularization in Machine Learning](/images/42365Regularization.jpeg)
+
 ## Why Do We Need Regularization?
 
 When we train machine learning models, especially complex ones with many parameters, they tend to fit the training data perfectly. However, this can lead to the model learning the noise in the data rather than the underlying pattern. Regularization helps by:
