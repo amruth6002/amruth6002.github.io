@@ -38,6 +38,9 @@ There are several types of regularization techniques, but two of the most common
 1. **Ridge Regression (L2 Regularization)**
 2. **Lasso Regression (L1 Regularization)**
 
+![L1 vs L2 Regularization](/images/l1_vs_l2_regularization.png)
+*Visual comparison of L1 (Lasso) and L2 (Ridge) regularization constraints. L1 creates a diamond-shaped constraint region leading to sparse solutions, while L2 creates a circular constraint promoting small but non-zero coefficients.*
+
 Let's explore each of these in detail.
 
 # Ridge Regression (L2 Regularization)
