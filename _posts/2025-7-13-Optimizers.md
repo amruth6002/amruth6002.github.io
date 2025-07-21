@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Optimizers in machine learning and deeplearning from scratch
+title: Optimizers in machine learning and deeplearning.
 ---
 
-In this blog i will explain the optimizers in machine learning and deeplearning from scratch. I will explain the following optimizers:
+In this blog i will explain the optimizers in machine learning and deeplearning. I will explain the following optimizers:
 
 1.) [vanilla Gradient Descent](#vanilla-gradient-descent)
 
